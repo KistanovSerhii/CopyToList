@@ -1,0 +1,5 @@
+﻿str1
+стр2
+utf-8
+это важно
+for view ru data
