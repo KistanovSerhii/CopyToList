@@ -28,7 +28,21 @@ Copy string array data to a collection type 1C
 
 Программа завершится, когда все строки источника будут скопированы, или если превышено время выполнения или максимальное количество строк, если они заданы.
 
-# ВНИМАНИЕ: Перед началом выполнения копируем в буфер пробел или любой другой один символ и задаем 1 в --remove-chars,
-# что позволит удалить один последний символ!
-# Файл источник должен быть в кодировке UTF-8
-# python copyToList.py --file ./data/list1.txt --delay 10 --timeout 300 --max-lines 0 --remove-chars 1
+#Дополнительно:
+В каталоге sources находятся исходные файлы и каталог data с файлом list1.txt как пример.
+
+Если запустить 1С, вызвать форму ввода списка и запустить copyToList.exe с необходимыми параметрами тогда можно перенести надор данных в список 1С
+![image](https://github.com/KistanovSerhii/CopyToList/assets/28355711/8692544a-97aa-41ff-bdec-5b0704585a23)
+![image](https://github.com/KistanovSerhii/CopyToList/assets/28355711/2097b2fe-289e-429b-a607-578561e7018c)
+
+#ВНИМАНИЕ:
+
+Перед началом выполнения копируем в буфер пробел или любой другой один символ и задаем 1 в --remove-chars, что позволит удалить один последний символ!
+
+Файл источник должен быть в кодировке UTF-8
+
+# Команда запуска:
+
+для exe файла: copyToList.exe --file ./yourdatapath/dataFile.txt --delay 10 --timeout 300 --max-lines 0 --remove-chars 1
+
+для файла исходника: python copyToList.py --file ./data/list1.txt --delay 10 --timeout 300 --max-lines 0 --remove-chars 1
